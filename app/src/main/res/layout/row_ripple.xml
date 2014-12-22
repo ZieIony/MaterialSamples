@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    app:ripple_color="#ffff0000"
-    app:ripple_background="#ffffffff"
+    app:material_rippleColor="#ffff0000"
+    android:clickable="true"
+    android:background="#ffffffff"
     android:layout_height="wrap_content">
 
     <LinearLayout
@@ -13,7 +14,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:layout_margin="@dimen/padding"
+            android:layout_margin="@dimen/material_padding"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_launcher" />
@@ -23,8 +24,8 @@
             android:gravity="center_vertical"
             android:textSize="16sp"
             android:textColor="#ff000000"
-            android:paddingLeft="@dimen/padding"
-            android:paddingRight="@dimen/padding"
+            android:paddingLeft="@dimen/material_padding"
+            android:paddingRight="@dimen/material_padding"
             android:text="Row"
             android:layout_width="match_parent"
             android:layout_height="56dp" />
