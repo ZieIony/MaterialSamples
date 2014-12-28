@@ -8,6 +8,18 @@
 
     <pl.zielony.material.shadow.ShadowLayout
         android:padding="16dp"
+        android:layout_gravity="bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <pl.zielony.material.widget.Button
+            android:text="Button 2"
+            android:layout_width="100dp"
+            android:layout_height="40dp" />
+    </pl.zielony.material.shadow.ShadowLayout>
+
+    <pl.zielony.material.shadow.ShadowLayout
+        android:padding="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -16,7 +28,7 @@
             android:background="#ffffffff"
             app:material_rippleColor="#ffff0000"
             app:material_elevation="@dimen/material_elevationLow"
-            android:text="Button"
+            android:text="BUTTON"
             android:padding="0dp"
             android:layout_width="100dp"
             android:layout_height="40dp" />
@@ -30,6 +42,7 @@
 
         <pl.zielony.material.widget.Button
             android:background="@drawable/bunny"
+            app:material_rippleColor="@null"
             app:material_elevation="@dimen/material_elevationLow"
             android:text=""
             android:padding="0dp"
@@ -37,4 +50,14 @@
             android:layout_height="100dp" />
     </pl.zielony.material.shadow.ShadowLayout>
 
+    <pl.zielony.material.shadow.ShadowLayout
+        android:padding="16dp"
+        android:layout_gravity="right|bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <pl.zielony.material.widget.FloatingActionButton
+            android:layout_width="@dimen/material_fabSize"
+            android:layout_height="@dimen/material_fabSize" />
+    </pl.zielony.material.shadow.ShadowLayout>
 </FrameLayout>

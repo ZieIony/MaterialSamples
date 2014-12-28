@@ -1,15 +1,15 @@
 package pl.zielony.materialsamples;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,9 +17,9 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         ListView listView = (ListView) findViewById(R.id.list);
-        String[] items = new String[]{"Buttons", "ListView with Ripple"};
-        final Class[] activities = new Class[]{ButtonsActivity.class, ListRippleActivity.class};
-        listView.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items));
+        String[] items = new String[]{"Buttons", "ListView with Ripple", "Large shadow", "Roboto"};
+        final Class[] activities = new Class[]{ButtonsActivity.class, ListRippleActivity.class, ShadowActivity.class, RobotoActivity.class};
+        listView.setAdapter(new ArrayAdapter<String>(this, R.layout.row, items));
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
