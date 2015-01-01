@@ -33,6 +33,10 @@
             android:name=".RobotoActivity"
             android:screenOrientation="portrait"
             android:label="@string/app_name" />
+        <activity
+            android:name=".SVGActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>
