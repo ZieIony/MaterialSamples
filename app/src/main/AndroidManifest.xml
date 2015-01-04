@@ -37,6 +37,11 @@
             android:name=".SVGActivity"
             android:screenOrientation="portrait"
             android:label="@string/app_name" />
+        <activity
+            android:theme="@style/AppThemeNoBars"
+            android:name=".StatusNavigationActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>
