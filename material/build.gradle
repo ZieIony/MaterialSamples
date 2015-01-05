@@ -1,2 +1,2 @@
 configurations.create("default")
-artifacts.add("default", file('material-0.2.0.aar'))
+artifacts.add("default", file('material-0.2.1.aar'))

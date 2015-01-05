@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <pl.zielony.material.shadow.ShadowLayout
+        android:id="@+id/fabLayout"
+        android:padding="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <pl.zielony.material.widget.FloatingActionButton
+            app:material_src="@raw/ic_shopping_cart_24px"
+            android:layout_width="@dimen/material_fabSize"
+            android:layout_height="@dimen/material_fabSize" />
+    </pl.zielony.material.shadow.ShadowLayout>
+
+    <pl.zielony.material.shadow.ShadowLayout
+        android:layout_gravity="right"
+        android:padding="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <pl.zielony.material.widget.Button
+            android:text="Animate"
+            android:id="@+id/animateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+    </pl.zielony.material.shadow.ShadowLayout>
+
+</LinearLayout>
