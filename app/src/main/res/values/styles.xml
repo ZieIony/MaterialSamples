@@ -5,6 +5,4 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="AppThemeNoBars" parent="AppTheme"/>
-
 </resources>
