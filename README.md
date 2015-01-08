@@ -10,7 +10,7 @@ Features the ripple touch feedback, elevation and the Roboto font.
 
 ##### TextView
 
-##### FloatingActiobButton
+##### FloatingActionButton
 Ready to go implementation of a round button with an icon, a ripple, and a cast shadow.
 
 ##### ShadowLayout
