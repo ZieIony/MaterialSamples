@@ -9,6 +9,8 @@
     <pl.zielony.material.shadow.ShadowLayout
         android:id="@+id/fabLayout"
         android:padding="16dp"
+        app:material_inAnimation="pop"
+        app:material_outAnimation="pop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -26,7 +28,7 @@
 
         <pl.zielony.material.widget.Button
             android:text="Animate"
-            android:id="@+id/animateButton"
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="40dp" />
     </pl.zielony.material.shadow.ShadowLayout>

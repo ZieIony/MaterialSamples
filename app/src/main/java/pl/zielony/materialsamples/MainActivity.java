@@ -17,8 +17,11 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         ListView listView = (ListView) findViewById(R.id.list);
-        String[] items = new String[]{"Buttons", "ListView with ripple", "Large shadow", "Roboto", "SVG icons", "Status and navigation bars", "View animations"};
-        final Class[] activities = new Class[]{ButtonsActivity.class, ListRippleActivity.class, ShadowActivity.class, RobotoActivity.class, SVGActivity.class, StatusNavigationActivity.class, AnimationsActivity.class};
+        String[] items = new String[]{"Buttons", "ListView with ripple", "Large shadow", "Roboto",
+                "SVG icons", "Status and navigation bars", "View animations","Snackbar"};
+        final Class[] activities = new Class[]{ButtonsActivity.class, ListRippleActivity.class,
+                ShadowActivity.class, RobotoActivity.class, SVGActivity.class, StatusNavigationActivity.class,
+                AnimationsActivity.class,SnackbarActivity.class};
         listView.setAdapter(new ArrayAdapter<String>(this, R.layout.row, items));
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
