@@ -15,7 +15,7 @@
         <pl.zielony.material.widget.Button
             android:text="Theme style"
             android:layout_width="wrap_content"
-            android:layout_height="40dp" />
+            android:layout_height="wrap_content" />
     </pl.zielony.material.shadow.ShadowLayout>
 
     <pl.zielony.material.shadow.ShadowLayout
@@ -26,12 +26,18 @@
         <pl.zielony.material.widget.Button
             style="@style/material_Button"
             android:background="#ffffffff"
+            app:material_cornerSize="2dp"
             app:material_rippleColor="#ffff0000"
             app:material_elevation="@dimen/material_elevationLow"
+            app:material_touchMarginTop="6dp"
+            app:material_touchMarginBottom="6dp"
             android:text="Inline Style"
-            android:padding="0dp"
+            android:paddingLeft="@dimen/material_padding"
+            android:paddingRight="@dimen/material_padding"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
             android:layout_width="wrap_content"
-            android:layout_height="40dp" />
+            android:layout_height="36dp" />
     </pl.zielony.material.shadow.ShadowLayout>
 
     <pl.zielony.material.shadow.ShadowLayout
