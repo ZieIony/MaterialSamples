@@ -8,19 +8,31 @@ Samples for the Material library by Zielony
 ##### Button
 Features the ripple touch feedback, elevation and the Roboto font.
 
+![My image](https://github.com/ZieIony/MaterialSamples/blob/master/images/ripple%20button.png)
+
 ##### TextView
+
+![My image](https://github.com/ZieIony/MaterialSamples/blob/master/images/roboto%20textview.png)
 
 ##### FloatingActionButton
 Ready to go implementation of a round button with an icon, a ripple, and a cast shadow.
 
+![My image](https://github.com/ZieIony/MaterialSamples/blob/master/images/floating%20action%20button.png)
+
 ##### ShadowLayout
 A layout used for rendering shadows. Each view with non-zero elevaion value should be placed in a ShadowLayout in order to cast shadows. Due to clipping issues on some devices this is neccessary, at least for now.
+
+![My image](https://github.com/ZieIony/MaterialSamples/blob/master/images/bunny.png)
 
 ##### Snackbar
 Toast's successor. Simple view used for displaying messages and simple actions.
 
+![My image](https://github.com/ZieIony/MaterialSamples/blob/master/images/snackbar.png)
+
 ##### SVGView
 ImageView used for rendering SVG files. Supports official SVG icons from Google, SVGs created in Illustrator and pretty much any well-formed SVG images. Internally uses the AndroidSVG library.
+
+![My image](https://github.com/ZieIony/MaterialSamples/blob/master/images/svg%20icons.png)
 
 ##### StatusBar, NavigationBar
 Two simple views for handling colored status and navigation bars on all versions of Android. On Lollipop these views set colorPrimaryDark, on KitKat change the status and navigation bar's gradients. On older versions does nothing. StatusBar should be placed at the top of each Activity and NavigationBar should be placed at the bottom.
