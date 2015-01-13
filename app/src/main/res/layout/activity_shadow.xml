@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <pl.zielony.material.widget.FrameLayout
+        <pl.zielony.material.internal.FastLayout
             android:id="@+id/button"
             android:background="#ffffffff"
             app:material_elevation="@dimen/material_elevationMax"
@@ -40,7 +40,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </LinearLayout>
-        </pl.zielony.material.widget.FrameLayout>
+        </pl.zielony.material.internal.FastLayout>
     </pl.zielony.material.shadow.ShadowLayout>
 
 

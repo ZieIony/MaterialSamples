@@ -26,7 +26,7 @@ public class ShadowActivity extends Activity {
         animator.setInterpolator(new AccelerateDecelerateInterpolator());
         animator.setRepeatCount(Animation.INFINITE);
         animator.setRepeatMode(Animation.REVERSE);
-        animator.setDuration(10000);
+        animator.setDuration(2000);
         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator valueAnimator) {
