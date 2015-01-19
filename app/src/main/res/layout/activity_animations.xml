@@ -1,36 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<pl.zielony.material.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="#ffffffff"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <pl.zielony.material.shadow.ShadowLayout
-        android:id="@+id/fabLayout"
-        android:padding="16dp"
+    <pl.zielony.material.widget.FloatingActionButton
+        android:id="@+id/fab"
+        app:material_src="@raw/ic_shopping_cart_24px"
         app:material_inAnimation="pop"
         app:material_outAnimation="pop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_margin="@dimen/material_padding"
+        android:layout_width="@dimen/material_fabSize"
+        android:layout_height="@dimen/material_fabSize" />
 
-        <pl.zielony.material.widget.FloatingActionButton
-            app:material_src="@raw/ic_shopping_cart_24px"
-            android:layout_width="@dimen/material_fabSize"
-            android:layout_height="@dimen/material_fabSize" />
-    </pl.zielony.material.shadow.ShadowLayout>
 
-    <pl.zielony.material.shadow.ShadowLayout
+    <pl.zielony.material.widget.Button
+        android:text="Animate"
+        android:id="@+id/button"
         android:layout_gravity="right"
-        android:padding="16dp"
+        android:layout_margin="@dimen/material_padding"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="40dp" />
 
-        <pl.zielony.material.widget.Button
-            android:text="Animate"
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp" />
-    </pl.zielony.material.shadow.ShadowLayout>
+    <pl.zielony.material.widget.Button
+        android:text="Fly animation"
+        android:id="@+id/button2"
+        app:material_inAnimation="fly"
+        app:material_outAnimation="fly"
+        android:layout_margin="@dimen/material_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
 
-</LinearLayout>
+    <pl.zielony.material.widget.Button
+        android:text="Animate"
+        android:id="@+id/button3"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/material_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+
+
+</pl.zielony.material.widget.LinearLayout>

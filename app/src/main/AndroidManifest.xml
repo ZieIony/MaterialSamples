@@ -53,6 +53,14 @@
             android:name=".TextFieldsActivity"
             android:screenOrientation="portrait"
             android:label="@string/app_name" />
+        <activity
+            android:name=".ZOrderActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".SaveStateActivity"
+            android:screenOrientation="sensor"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>

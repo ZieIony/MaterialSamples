@@ -19,15 +19,28 @@ public class AnimationsActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_animations);
 
-        final View fabLayout = findViewById(R.id.fabLayout);
+        final View fab = findViewById(R.id.fab);
         Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(fabLayout.getVisibility()!=View.VISIBLE){
-                    fabLayout.setVisibility(View.VISIBLE);
+                if (fab.getVisibility() != View.VISIBLE) {
+                    fab.setVisibility(View.VISIBLE);
+                } else {
+                    fab.setVisibility(View.INVISIBLE);
+                }
+            }
+        });
+
+        final View button2 = findViewById(R.id.button2);
+        Button button3 = (Button) findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(button2.getVisibility()!=View.VISIBLE){
+                    button2.setVisibility(View.VISIBLE);
                 }else {
-                    fabLayout.setVisibility(View.INVISIBLE);
+                    button2.setVisibility(View.INVISIBLE);
                 }
             }
         });

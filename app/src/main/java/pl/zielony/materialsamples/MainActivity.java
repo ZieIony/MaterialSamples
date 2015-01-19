@@ -8,6 +8,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import pl.zielony.material.beta.Toolbar;
+
 
 public class MainActivity extends Activity {
 
@@ -16,14 +18,17 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setText("Material Samples");
+
         ListView listView = (ListView) findViewById(R.id.list);
         String[] items = new String[]{"Buttons", "ListView with ripple", "Large shadow", "Roboto",
-                "SVG icons", "Status and navigation bars", "View animations","Snackbar",
-                "TextFields"
+                "SVG icons", "Status and navigation bars", "View animations", "Snackbar",
+                "TextFields", "Z order", "Saving state"
         };
         final Class[] activities = new Class[]{ButtonsActivity.class, ListRippleActivity.class,
                 ShadowActivity.class, RobotoActivity.class, SVGActivity.class, StatusNavigationActivity.class,
-                AnimationsActivity.class,SnackbarActivity.class};
+                AnimationsActivity.class, SnackbarActivity.class, TextFieldsActivity.class, ZOrderActivity.class, SaveStateActivity.class};
         listView.setAdapter(new ArrayAdapter<String>(this, R.layout.row, items));
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
