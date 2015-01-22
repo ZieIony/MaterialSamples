@@ -61,6 +61,14 @@
             android:name=".SaveStateActivity"
             android:screenOrientation="sensor"
             android:label="@string/app_name" />
+        <activity
+            android:name=".DialogActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".ImageFadeActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>

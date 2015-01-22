@@ -24,11 +24,12 @@ public class MainActivity extends Activity {
         ListView listView = (ListView) findViewById(R.id.list);
         String[] items = new String[]{"Buttons", "ListView with ripple", "Large shadow", "Roboto",
                 "SVG icons", "Status and navigation bars", "View animations", "Snackbar",
-                "TextFields", "Z order", "Saving state"
+                "TextFields", "Z order", "Saving state", "Dialog", "Image fade"
         };
         final Class[] activities = new Class[]{ButtonsActivity.class, ListRippleActivity.class,
                 ShadowActivity.class, RobotoActivity.class, SVGActivity.class, StatusNavigationActivity.class,
-                AnimationsActivity.class, SnackbarActivity.class, TextFieldsActivity.class, ZOrderActivity.class, SaveStateActivity.class};
+                AnimationsActivity.class, SnackbarActivity.class, TextFieldsActivity.class, ZOrderActivity.class,
+                SaveStateActivity.class, DialogActivity.class, ImageFadeActivity.class};
         listView.setAdapter(new ArrayAdapter<String>(this, R.layout.row, items));
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
