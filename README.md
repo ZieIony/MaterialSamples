@@ -37,6 +37,11 @@ ImageView used for rendering SVG files. Supports official SVG icons from Google,
 ##### StatusBar, NavigationBar
 Two simple views for handling colored status and navigation bars on all versions of Android. On Lollipop these views set colorPrimaryDark, on KitKat change the status and navigation bar's gradients. On older versions does nothing. StatusBar should be placed at the top of each Activity and NavigationBar should be placed at the bottom.
 
+##### ImageView
+Basic ImageView extended with most of the described features. Can use the new fade with brightness and saturation change.
+
+![My image](https://github.com/ZieIony/MaterialSamples/blob/master/images/mazda%20fade.png)
+
 ### Custom attributes
 
 The library adds several custom attributes, which can be used in xml to access material features in custom views.
@@ -89,3 +94,4 @@ Used by most of the views. Allows to specify an animation type to be used when s
  - fade
  - pop
  - fly
+ - brightnessSaturationFade (only for ImageView)
