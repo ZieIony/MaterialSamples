@@ -6,7 +6,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <pl.zielony.material.widget.FloatingActionButton
+     <pl.zielony.material.widget.Button
+        android:text="Fly animation"
+        android:id="@+id/button2"
+        app:material_inAnimation="fly"
+        app:material_outAnimation="fly"
+        android:layout_margin="@dimen/material_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+
+    <pl.zielony.material.widget.Button
+        android:text="Animate"
+        android:id="@+id/button3"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/material_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+
+    <pl.zielony.material.widget.SVGActionButton
         android:id="@+id/fab"
         app:material_src="@raw/ic_shopping_cart_24px"
         app:material_inAnimation="pop"
@@ -19,23 +36,6 @@
     <pl.zielony.material.widget.Button
         android:text="Animate"
         android:id="@+id/button"
-        android:layout_gravity="right"
-        android:layout_margin="@dimen/material_padding"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp" />
-
-    <pl.zielony.material.widget.Button
-        android:text="Fly animation"
-        android:id="@+id/button2"
-        app:material_inAnimation="fly"
-        app:material_outAnimation="fly"
-        android:layout_margin="@dimen/material_padding"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp" />
-
-    <pl.zielony.material.widget.Button
-        android:text="Animate"
-        android:id="@+id/button3"
         android:layout_gravity="right"
         android:layout_margin="@dimen/material_padding"
         android:layout_width="wrap_content"

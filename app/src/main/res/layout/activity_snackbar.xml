@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<pl.zielony.material.widget.FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<pl.zielony.material.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="#ffffffff"
@@ -7,21 +7,19 @@
     android:layout_height="match_parent">
 
     <pl.zielony.material.widget.Button
-        android:text="Show snackbar"
+        android:text="Show floating snackbar"
         android:id="@+id/button"
         android:layout_gravity="left"
         android:layout_margin="@dimen/material_padding"
         android:layout_width="wrap_content"
         android:layout_height="40dp" />
 
-    <pl.zielony.material.widget.Snackbar
-        android:id="@+id/snackbar"
-        android:layout_gravity="left|bottom"
+    <pl.zielony.material.widget.Button
+        android:text="Show docked snackbar"
+        android:id="@+id/button2"
+        android:layout_gravity="left"
+        android:layout_margin="@dimen/material_padding"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:material_layoutStyle="docked"
-        app:material_text="Hello world"
-        app:material_action="dismiss"
-        android:visibility="invisible" />
+        android:layout_height="40dp" />
 
-</pl.zielony.material.widget.FrameLayout>
+</pl.zielony.material.widget.LinearLayout>

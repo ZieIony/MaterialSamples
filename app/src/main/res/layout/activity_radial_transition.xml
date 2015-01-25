@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pl.zielony.material.widget.FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <pl.zielony.material.animation.TransitionLayout
+        android:id="@+id/transition"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <pl.zielony.material.widget.LinearLayout
+            android:background="#ffffffff"
+            android:padding="@dimen/material_padding"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <pl.zielony.material.widget.TextView
+                android:textSize="20sp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:layout_marginBottom="@dimen/material_padding"
+                android:hint="login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <pl.zielony.material.widget.TextView
+                android:textSize="20sp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:layout_marginBottom="@dimen/material_padding"
+                android:hint="password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <pl.zielony.material.widget.Button
+                android:text="login"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </pl.zielony.material.widget.LinearLayout>
+
+        <pl.zielony.material.widget.LinearLayout
+            android:background="?attr/material_colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <pl.zielony.material.widget.LinearLayout
+            android:background="?attr/material_colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </pl.zielony.material.animation.TransitionLayout>
+
+    <pl.zielony.material.widget.Button
+        android:id="@+id/button"
+        android:layout_margin="@dimen/material_padding"
+        android:layout_gravity="end|bottom"
+        android:text="animate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</pl.zielony.material.widget.FrameLayout>

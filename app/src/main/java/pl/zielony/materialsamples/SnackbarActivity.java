@@ -3,9 +3,10 @@ package pl.zielony.materialsamples;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 import com.nineoldandroids.animation.Animator;
+
+import pl.zielony.material.widget.Snackbar;
 
 /**
  * Created by Marcin on 2014-12-15.
@@ -19,18 +20,25 @@ public class SnackbarActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_snackbar);
 
-        final View snackbar = findViewById(R.id.snackbar);
+        final Snackbar snackbar = new Snackbar(this, "Hello world!", "dismiss", getResources().getInteger(R.integer.material_snackbarDuration));
         snackbar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                snackbar.setVisibility(View.INVISIBLE);
+                snackbar.hide();
             }
         });
-        Button button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                snackbar.setVisibility(View.VISIBLE);
+                snackbar.setStyle(Snackbar.Style.Floating);
+                snackbar.show();
+            }
+        });
+        findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                snackbar.setStyle(Snackbar.Style.Docked);
+                snackbar.show();
             }
         });
     }

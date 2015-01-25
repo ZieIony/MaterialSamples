@@ -44,7 +44,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp" />
 
-    <pl.zielony.material.widget.FloatingActionButton
+    <pl.zielony.material.widget.SVGActionButton
         app:material_src="@raw/ic_shopping_cart_24px"
         android:layout_margin="@dimen/material_padding"
         android:layout_width="@dimen/material_fabSize"

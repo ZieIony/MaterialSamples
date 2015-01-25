@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffffff"
-    android:padding="16dp"
     tools:context=".MainActivity">
 
     <pl.zielony.material.internal.FastLayout
@@ -12,7 +11,7 @@
         android:background="#ffffffff"
         app:material_elevation="@dimen/material_elevationMax"
         app:material_cornerSize="2dp"
-        android:padding="0dp"
+        android:layout_margin="@dimen/material_padding"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
