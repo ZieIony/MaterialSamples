@@ -1,3 +1,5 @@
+This project is being kept to keep old links working. The library is now officially availabe here: https://github.com/ZieIony/Carbon
+
 MaterialSamples
 ===============
 
